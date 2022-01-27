@@ -1,0 +1,22 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #000000 !important;
+    font-size: 1.1em;
+}
+
+
+
+.hero-section {
+  position: relative;
+  overflow-x: hidden;
+  background-image: url("../../assets/images/herocar.jpg");
+  height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.color {
+  background: transparent;
+  color: #ff9500 !important;
+}

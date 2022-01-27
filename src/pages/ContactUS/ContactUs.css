@@ -1,0 +1,19 @@
+.contact {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(2, 3, 0) !important;
+    border-radius: 50px !important;
+    border: 2px solid rgb(81, 209, 81);
+    color: aliceblue;
+  }
+  .contact-Section img {
+    height: 300px;
+  }
+  .contact-header {
+    border: 2px solid green;
+    width: 40%;
+    border-radius: 40px;
+    color: white;
+    background-color: rgb(48, 48, 48);
+  }
+  
