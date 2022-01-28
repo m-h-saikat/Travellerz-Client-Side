@@ -4,6 +4,7 @@ import GetInTouch from '../GetInTouch/GetInTouch';
 import HeroSection from '../../HeroSection/HeroSection';
 import About from '../About/About';
 import ExpertTeam from '../ExpertTeam/ExpertTeam';
+import CustomerReviews from '../CustomerReviews/CustomerReviews';
 
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
 
             <HeroSection></HeroSection>
             <HomeServices></HomeServices>
-
+<CustomerReviews></CustomerReviews>
     
 
 

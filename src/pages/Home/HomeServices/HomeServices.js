@@ -30,6 +30,7 @@ const HomeServices = () => {
                                         <h5>Location : {service.location}</h5>
                                      
                                         <h5>Transportation : {service.transportation}</h5>
+                                        <h5>Date & Time : {service.time}</h5>
                                         <br />
                                         <p className="card-text">{service.desc}</p>
                                     </div>

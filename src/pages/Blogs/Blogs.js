@@ -16,7 +16,7 @@ const Blogs = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/blogs?page=${page}&&size=${size}&&filter=${filter}`)
+        fetch(`https://afternoon-meadow-22769.herokuapp.com/blogs?page=${page}&&size=${size}&&filter=${filter}`)
             .then(res => res.json())
             .then(data => {
                 setServices(data.blogs)
@@ -66,7 +66,7 @@ const Blogs = () => {
                                         <h6 className="card-text"> Location: {service.location}</h6>
                                         <h6 className="card-text">Transportation: {service.transportation}</h6>
                                         <h6 className="card-text">Rating : {service.rating}</h6>
-                                        <h5 className="card-text">Price : {service.price}</h5>
+                                        <h6 className="card-text">Date And Time : {service.time}</h6>
                                         <p className="card-text">{service.desc}</p>
 
                                     </div>

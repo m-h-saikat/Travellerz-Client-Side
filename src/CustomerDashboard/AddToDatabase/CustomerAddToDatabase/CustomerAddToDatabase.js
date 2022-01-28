@@ -13,7 +13,7 @@ const CustomerAddToDatabase = () => {
         data.userName = user.displayName
         data.email = user.email
         data.status = 'pending'
-        axios.post('http://localhost:5000/blogs', data)
+        axios.post('https://afternoon-meadow-22769.herokuapp.com/blogs', data)
 
             .then(res => {
                 if (res.data.insertedId) {
@@ -24,6 +24,31 @@ const CustomerAddToDatabase = () => {
     };
 
 
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = date.getMonth(); 
+    const day = date.getDate(); 
+    const hours = date.getHours(); 
+    const minutes = date.getMinutes(); 
+    const seconds = date.getSeconds(); 
+    
+    const addZero = (num) => `${num}`.padStart(2, '0');
+    
+    const formatted =
+      year +
+      '-' +
+      addZero(month + 1) +
+      '-' +
+      addZero(day) +
+      ' ' +
+      addZero(hours) +
+      ':' +
+      addZero(minutes) ;
+
+      console.log(formatted);
+
+
+    
     return (
         <div className="add-service">
             <div className="contact1">
@@ -47,6 +72,11 @@ Add A New Blog                        </span>
                             <input className="input1" placeholder="Location" {...register("location", { required: true, })} />
                             <span className="shadow-input1"></span>
                         </div>
+
+                        <div className="wrap-input1 validate-input " data-validate="Name is required">
+                            <input className="input1 " value={formatted} {...register("time")} />
+                        </div>
+
 
                         <div className="wrap-input1 validate-input" data-validate="rating is required">
                             <input className="input1" placeholder="Rating" type="number" {...register("rating")} />
