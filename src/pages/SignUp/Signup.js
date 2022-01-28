@@ -114,7 +114,7 @@ const Signup = () => {
                         <button className="btn" onClick={handleGoogleLogin}> <img src={google} width="46px" alt="google-icon" /></button>
 
                         <br />
-                        <p className="text-white mt-3"> Have a Account Login ?<Link to="/login"><span className="text-white">Please Login</span></Link ></p>
+                        <h5 className="text-white mt-3"> Have a Account Login ?<Link to="/login"><h5 className="text-white">Please Login</h5></Link ></h5>
                     </div>
 
 

@@ -54,7 +54,7 @@ const Header = () => {
                             }
 
 
-                            {!displayName ? (<><Nav.Link as={NavLink} to="/signup">Sign Up</Nav.Link>
+                            {!displayName ? (<>
 
                                 <Nav.Link as={NavLink} to="/login">Log in</Nav.Link></>) : (
                                 <>
