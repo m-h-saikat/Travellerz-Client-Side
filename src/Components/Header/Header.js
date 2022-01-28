@@ -25,7 +25,7 @@ const Header = () => {
 
     return (
         <div>
-            <Navbar bg="light" expand="lg" className= "navbar  navbar-expand-lg navbar-light color text-dark">
+            <Navbar bg="dark" expand="lg" className= "navbar  navbar-expand-lg navbar-dark color text-white">
                 <Container>
                     <Nav.Link as={NavLink} to="/home"><Navbar.Brand href="#home"> <h3>Travellerz</h3></Navbar.Brand></Nav.Link>
 

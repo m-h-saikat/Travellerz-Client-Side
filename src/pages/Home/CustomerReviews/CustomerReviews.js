@@ -17,7 +17,7 @@ const CustomerReviews = () => {
         <div className="  text-white pb-5 pt-1 my-5">
             <div className="text-center pt-5 pb-3">
            
-                <h2 className="mx-auto text-center About-header " >Customer Reviews</h2>
+                <h2 className="mx-auto text-center About-header py-1 " >Customer Reviews</h2>
 
             </div>
             <hr />
@@ -26,9 +26,9 @@ const CustomerReviews = () => {
                     reviews?.map(
                         review =>
                             <Carousel.Item key={review._id}>
-                                <div className=" bg-dark d-flex justify-content-center py-3 px-5 text-center review-slider">
+                                <div className=" bg-primary d-flex justify-content-center py-3 px-5 text-center review-slider">
                                     <div className="w-50">
-                                        <img src={review.ratinguserprofile} className="customerProfile"
+                                        <img src={review.img} className="customerProfile"
                                          width="150" height="150"  alt="" />
                                         <h3 className="color-white">{review?.name}</h3>
                                         <br />

@@ -5,7 +5,7 @@ import banner2 from '../../assets/banner/Banner-2.jpg';
 import banner3 from '../../assets/banner/Banner-3.jpg';
 const HeroSection = () => {
     return (
-        <div className="banner pb-5">
+        <div className="banner ">
             <>
                 <Carousel>
                     <Carousel.Item>

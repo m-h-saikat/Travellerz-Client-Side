@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 // import './Services.css'
 import spinner from '../../assets/spinner.gif'
 import ReactPaginate from 'react-paginate';
-
+import './Blogs.css'
 
 
 
@@ -38,14 +38,15 @@ const Blogs = () => {
     return (
         <div>
             <div className="row">
-                <div >
+            <div className="d-flex mx-auto justify-content-center">  <div>  <h3 className="k mx-3 text-primary">Please Choose Your Category</h3></div>
+                <div className="select">
                     <select onChange={handleSelectValue} className="pending p-2 ">
                         <option defaultValue=''>All</option>
                         <option defaultValue="air">Air</option>
                         <option defaultValue="cruise">cruise</option>
                         <option defaultValue="road">road</option>
                     </select>
-                </div>
+                </div></div>
 
             </div>
             <h2>{services?.desc}</h2>

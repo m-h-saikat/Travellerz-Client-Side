@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Nav, Navbar, } from 'react-bootstrap';
 
 import { NavLink } from 'react-router-dom';
 import UseAuth from '../../../hooks/UseAuth';
@@ -8,11 +9,11 @@ const HomeServices = () => {
     const { services } = UseAuth()
     const homeServices = services.slice(0, 6)
     return (
-        <div className="py-5">
+        <div className="">
             <div className="text-center pt-5 pb-3">
                 <h3 style={{ fontSize: "60px" }}>Our  Blogs </h3>
             </div>
-            <div className="container text-black mt-5 mb-5" >
+            <div className="container text-black mt-5 " >
                 <div className="row row-cols-1 row-cols-md-3 g-4">
 
                     {
@@ -44,6 +45,7 @@ const HomeServices = () => {
 
                 </div>
             </div >
+           <div className="text-center"> <Nav.Link as={NavLink} to="/blogs"><h3><button className="btn btn-outline-success">Explore More Blogs</button> </h3></Nav.Link></div>
         </div>
     );
 };

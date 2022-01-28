@@ -83,66 +83,72 @@ const BlogDetails = () => {
 
 
 
-                <div className='col-md-6 add-service d-flex justify-content-center'>
-                    <div className=" bg-dark text-white pb-5 pt-1">
-                        <div className="text-center pt-5 pb-3">
+<section>
+    <div className="">
+        <div className="row">
+        <div className='col-md-6 add-service d-flex '>
+                    <div className="  text-dark pb-5 pt-1 justify-content-center">
+                        <div className="text-center text-danger pt-5 pb-3">
                             <h4 >Customer Reviews</h4>
                         </div>
                         <hr />
-                        <Carousel>
-                            {
-                                reviews?.map(
+
+
+
+
+
+
+   {reviews?.map(
                                     review =>
-                                        <Carousel.Item key={review._id}>
-                                            <div className="d-flex justify-content-center text-center review-slider">
-                                                <div className="w-50">
-                                                    <h3 className="color-white">{review?.name}</h3>
-                                                    <br />
+                                    <li>
+                                    <h6 className="color-white">Name : {review?.name}</h6>
+                                    <p>{review?.time}</p>
+                                    <br />
                                                     <p>  {review?.review}</p>
+                                    </li>
+   )
+}
 
-                                                    <Rating className="star"
-                                                        initialRating={Number(review.rating)}
-                                                        emptySymbol="far fa-star icon-color"
-                                                        fullSymbol="fas fa-star icon-color"
-                                                        readonly></Rating>
-                                                </div>
-                                            </div>
-                                        </Carousel.Item>
-                                )
-                            }
-
-                        </Carousel>
-
+             
                     </div>
                 </div>
-                
+
+
                 <div className='col-md-6 add-service d-flex justify-content-center'>
                
-                <br />
-                    <form onSubmit={handleSubmit(onSubmit)}
-                        className="contact1-form validate-form">
+               <br />
+                   <form onSubmit={handleSubmit(onSubmit)}
+                       className="contact1-form validate-form">
 
-                        <div className="wrap-input1 validate-input " data-validate="Name is required">
-                            <input className="input1 " value={user.displayName} {...register("name")} />
-                        </div>
+                       <div className="wrap-input1 validate-input " data-validate="Name is required">
+                           <input className="input1 " value={user.displayName} {...register("name")} />
+                       </div>
 
-                        <div className="wrap-input1 validate-input" data-validate="Message is required">
-                            <textarea className="input1 " placeholder="Description"{...register("review",)} />
-                            <span className="shadow-input1"></span>
-                        </div><div className="wrap-input1 validate-input " data-validate="Name is required">
-                            <input className="input1 " min="1" max="5" placeholder="rating" type="number" {...register("rating")} />
-                        </div>
+                       <div className="wrap-input1 validate-input" data-validate="Message is required">
+                           <textarea className="input1 " placeholder="Description"{...register("review",)} />
+                           <span className="shadow-input1"></span>
+                       </div><div className="wrap-input1 validate-input " data-validate="Name is required">
+                           <input className="input1 " min="1" max="5" placeholder="rating" type="number" {...register("rating")} />
+                       </div>
 
-                        <div className="container-contact1-form-btn">
-                            <button type='submit' className="contact1-form-btn">
-                                <span>
-                                    Post Review
-                                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                       <div className="container-contact1-form-btn">
+                           <button type='submit' className="contact1-form-btn">
+                               <span>
+                                   Post Review
+                                   <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+                               </span>
+                           </button>
+                       </div>
+                   </form>
+               </div>
+        </div>
+    </div>
+</section>
+
+
+              
+                
+           
 
 
             </div >
