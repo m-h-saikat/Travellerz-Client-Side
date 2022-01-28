@@ -10,21 +10,21 @@ const About = () => {
           src={AboutHeader}
           alt=""
           width="100%"
-          height="300px"
+          height="200px"
           className="mb-3"
         />
       </div>
-      <h2 className=" my-5 About-header p-3 m-3 mx-auto"> About Traip Travel And Tour Booking</h2>
+      <h2 className=" my-5 About-header p-3 m-3 text-center mx-auto"> About Travellerz</h2>
       <div className=" mb-4 ">
         <div className="row d-flex">
-          <div className="col-md-6 ">
+          <div className="col-md-6 my-auto">
             <img src={ABoutImg} alt="" width="100%" />
           </div>
           <div className="col-md-6  p-5 my-auto mx-auto">
-            <h1 className="text-danger text-center mb-2">
+            <h1 className="text-danger text-center ">
               <b>Travellerz</b>
             </h1>
-            <h4 className="p-4">
+            <h4 className="p-4 text-white">
               We are the most experienced & Leading tour operator and travel
               agency in Bangladesh. Our specialty is the best tourist
               attractions, best locations, best itineraries, value for money,

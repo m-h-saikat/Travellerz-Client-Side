@@ -9,11 +9,11 @@ const HomeServices = () => {
     const { services } = UseAuth()
     const homeServices = services.slice(0, 6)
     return (
-        <div className="">
-            <div className="text-center pt-5 pb-3">
-                <h3 style={{ fontSize: "60px" }}>Our  Blogs </h3>
+        <div className="bg-dark pb-2">
+            <div className="text-center pt-5 pb-3 ">
+            <h2 className="mx-auto text-center About-header py-3 " >Our Most Demandable Blogs</h2>
             </div>
-            <div className="container text-black mt-5 " >
+            <div className="container text-black mt-5 mb-3" >
                 <div className="row row-cols-1 row-cols-md-3 g-4">
 
                     {
@@ -27,17 +27,17 @@ const HomeServices = () => {
                                 <div className="card custom-cart h-100 p-3 hover">
                                     <img src={service.img} className="img-fluid rounded-start w-100" alt="..." />
                                     <div className="card-body">
-                                        <h2 className="card-title text-center">{service.place}</h2> 
-                                        <h5>Location : {service.location}</h5>
+                                        <h3 className="card-title text-danger text-center">{service.place}</h3> 
+                                        <h5><span className="text-primary">Location :</span> {service.location}</h5>
                                      
-                                        <h5>Transportation : {service.transportation}</h5>
-                                        <h5>Date & Time : {service.time}</h5>
+                                        <h5><span className="text-primary">Transportation : </span>{service.transportation}</h5>
+                                        <h5><span className="text-primary">Date & Time :</span> {service.time}</h5>
                                         <br />
                                         <p className="card-text">{service.desc}</p>
                                     </div>
                                     <div className="card-footer  text-center">
-                                        <h4 className="p-2 text-danger my-2">Price $: {service.price}</h4>
-                                        <NavLink to={`/blogs/${service._id}`} className="btn btn-primary btn-lg  text-light   rounded btn-block"> Blog Details</NavLink>
+                                        <h4 className="p-2 text-danger my-2">Price : {service.price}</h4>
+                                        <NavLink to={`/blogs/${service._id}`} className="btn btn-primary  text-light   rounded btn-block"> Blog Details</NavLink>
                                     </div>
                                 </div>
                             </div>)
@@ -45,7 +45,7 @@ const HomeServices = () => {
 
                 </div>
             </div >
-           <div className="text-center"> <Nav.Link as={NavLink} to="/blogs"><h3><button className="btn btn-outline-success">Explore More Blogs</button> </h3></Nav.Link></div>
+           <div className="text-center"> <Nav.Link as={NavLink} to="/blogs"><h3><button className="btn btn-success">Explore More Blogs  <i class="fas fa-angle-double-right"></i><i class="fas fa-angle-double-right"></i><i class="fas fa-angle-double-right"></i></button> </h3></Nav.Link></div>
         </div>
     );
 };

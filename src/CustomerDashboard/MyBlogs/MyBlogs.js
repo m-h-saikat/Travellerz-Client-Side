@@ -36,10 +36,10 @@ const MyBlogs = () => {
     return (
         < div className="container my-order-container custom-body" >
             <div className="text-center pb-3">
-                <h1 className="mb-5 text-center pt-5">Your Have  <span className="text-dark">{orders.length}</span> Blogs  </h1>
+                <h1 className="mb-5 text-center pt-5">Your Have  <span className="text-danger">{orders.length}</span> Blogs  </h1>
             </div>
 
-            <table className="table bg-info text-dark " style={{ width: "100%" }}>
+            <table className="table text-center bg-info text-dark " style={{ width: "100%" }}>
                 <thead  >
                     <tr className="bg-dark text-white mb-3 p-2" style={{ border: "1px solid red" }}>
                         <th  >Place</th>

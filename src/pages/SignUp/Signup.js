@@ -74,13 +74,13 @@ const Signup = () => {
 
     return (
 
-        <div className="contact1 add-service d-flex justify-content-center custom-body my-5">
-            <div className="container-contact1 d-flex justify-content-center">
+        <div className="contact1 add-service d-flex justify-content-center custom-body p-5 bg-dark">
+            <div className="container-contact1 d-flex justify-content-center bg-secondary">
                 <div className=" text-center">
                     <div className="">
 
                         <form onSubmit={handleRegistration} className="contact1-form validate-form">
-                            <span className="contact1-form-title">
+                            <span className="contact1-form-title text-white">
                                 Register
                             </span>
 
@@ -114,7 +114,7 @@ const Signup = () => {
                         <button className="btn" onClick={handleGoogleLogin}> <img src={google} width="46px" alt="google-icon" /></button>
 
                         <br />
-                        <p> Have a Account Login ?<Link to="/login">Please Login</Link ></p>
+                        <p className="text-white mt-3"> Have a Account Login ?<Link to="/login"><span className="text-white">Please Login</span></Link ></p>
                     </div>
 
 

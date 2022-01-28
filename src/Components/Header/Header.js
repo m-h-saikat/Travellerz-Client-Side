@@ -25,7 +25,7 @@ const Header = () => {
 
     return (
         <div>
-            <Navbar bg="dark" expand="lg" className= "navbar  navbar-expand-lg navbar-dark color text-white">
+            <Navbar  expand="lg" className= "navbar main-navbar navbar-expand-lg navbar-dark color text-white">
                 <Container>
                     <Nav.Link as={NavLink} to="/home"><Navbar.Brand href="#home"> <h3>Travellerz</h3></Navbar.Brand></Nav.Link>
 
@@ -59,13 +59,13 @@ const Header = () => {
                                 <Nav.Link as={NavLink} to="/login">Log in</Nav.Link></>) : (
                                 <>
                                     {isAdmin ?
-                                        <Nav.Link className='text-danger' ><h4>{displayName} <i className="fas fa-users-cog"></i></h4></Nav.Link>
+                                        <Nav.Link className='text-danger' ><png>{displayName} <i className="fas fa-users-cog"></i></png></Nav.Link>
                                         :
-                                        <Nav.Link className='text-danger' ><p>{displayName}</p></Nav.Link>
+                                        <Nav.Link className='text-danger ' ><p className="pt-3">{displayName}</p></Nav.Link>
                                     }
 
 
-                                    <button className='btn-warning p-2 text-red   rounded btn-block' onClick={logOut}> log out</button></>
+                                    <button className='btn-warning  text-red   rounded btn-block' onClick={logOut}> log out</button></>
                             )}
 
                         </Nav>

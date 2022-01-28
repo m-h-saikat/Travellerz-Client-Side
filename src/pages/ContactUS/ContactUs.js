@@ -5,9 +5,9 @@ import faq from "../../assets/FAQ.jpg";
 import "./ContactUs.css";
 const ContactUs = () => {
   return (
-    <div className="contact-Section text-center">
+    <div className="contact-Section text-center bg-dark ">
       <div>
-        <img src={contactImg} alt="" className="img-fluid w-100" />
+        <img src={contactImg} alt=""  className=" w-100 " />
       </div>
 
       {/* Contact Information Start    */}
@@ -41,8 +41,8 @@ const ContactUs = () => {
        
 
         <div className="container d-lg-flex">
-          <div className="mb-3 col-md-6">
-            <img src={faq} width="100%" height="90%" alt="" />
+          <div className="mb-3 col-md-6 mt-5">
+            <img src={faq} width="90%" className="h-100 rounded"  alt="" />
           </div>
 
           <div className="my-auto col-md-6 ms-4 ">

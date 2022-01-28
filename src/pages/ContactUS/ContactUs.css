@@ -1,13 +1,13 @@
 .contact {
     padding: 10px;
     margin: 10px;
-    background-color: rgb(2, 3, 0) !important;
+    background-color: rgb(246, 247, 243) !important;
     border-radius: 50px !important;
     border: 2px solid rgb(81, 209, 81);
-    color: aliceblue;
+    color: rgb(19, 77, 128);
   }
   .contact-Section img {
-    height: 300px;
+    height: 200px;
   }
   .contact-header {
     border: 2px solid green;

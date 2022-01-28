@@ -6,6 +6,8 @@
     background-color: rgb(48, 48, 48);
   }
   .About-Container {
-    background-color: rgb(226, 250, 210);
+    background-color: rgb(0, 0, 0);
   }
-  
+  .about-headerr{
+    height:200px;
+  }

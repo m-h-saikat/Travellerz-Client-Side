@@ -66,16 +66,16 @@ const BlogDetails = () => {
 
 
     return (
-        <div className="container custom-body mt-5">
-            <div className='row  align-items-center'>
-                <div className=" col-md-12">
-                    <div className="card custom-cart mb-3">
+        <div className=" custom-body  bg-dark ">
+            <div className='container p-4 bg-secondary mx-auto row  align-items-center bg-dark '>
+                <div className=" col-md-12 bg-dark text-white">
+                    <div className="card custom-cart mb-3 bg-dark text-white pt-3">
                         <img src={selected.img} className="card-img-top w-50 mx-auto" alt="..." />
                         <div className="card-body">
                             <h1 className="card-title text-center"> {selected.place}</h1>
                             <p className="card-text"> {selected.desc}</p>
-                            <p className="card-text"> <b>Transportation:</b>{selected.transportation}</p>
-                            <p className="card-text"><b>Rating :</b>{selected.rating}</p>
+                            <p className="card-text"> <b className="text-primary">Transportation: </b>{selected.transportation}</p>
+                            <p className="card-text"><b className="text-primary">Rating : </b>{selected.rating}</p>
                            
                         </div>
                     </div>
@@ -87,6 +87,7 @@ const BlogDetails = () => {
     <div className="">
         <div className="row">
         <div className='col-md-6 add-service d-flex '>
+            
                     <div className="  text-dark pb-5 pt-1 justify-content-center">
                         <div className="text-center text-danger pt-5 pb-3">
                             <h4 >Customer Reviews</h4>
@@ -101,7 +102,7 @@ const BlogDetails = () => {
    {reviews?.map(
                                     review =>
                                     <li>
-                                    <h6 className="color-white">Name : {review?.name}</h6>
+                                    <h6 className="color-white text-white"><i class="fas fa-arrow-right"></i> Name : {review?.name}</h6>
                                     <p>{review?.time}</p>
                                     <br />
                                                     <p>  {review?.review}</p>
@@ -117,8 +118,10 @@ const BlogDetails = () => {
                 <div className='col-md-6 add-service d-flex justify-content-center'>
                
                <br />
+               
                    <form onSubmit={handleSubmit(onSubmit)}
                        className="contact1-form validate-form">
+            <h3 className="text-white mb-4">Submit Your Review here</h3>
 
                        <div className="wrap-input1 validate-input " data-validate="Name is required">
                            <input className="input1 " value={user.displayName} {...register("name")} />

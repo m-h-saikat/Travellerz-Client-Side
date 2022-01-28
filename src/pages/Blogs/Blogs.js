@@ -36,11 +36,11 @@ const Blogs = () => {
 
 
     return (
-        <div>
-            <div className="row">
-            <div className="d-flex mx-auto justify-content-center">  <div>  <h3 className="k mx-3 text-primary">Please Choose Your Category</h3></div>
+        <div className="bg-dark">
+            <div className="row py-3 ">
+            <div className="d-flex mx-auto justify-content-center ">  <div>  <h3 className="k mx-3 text-white ">Please Choose Your Category</h3></div>
                 <div className="select">
-                    <select onChange={handleSelectValue} className="pending p-2 ">
+                    <select onChange={handleSelectValue} className="pending p-1 px-5 bg-primary text-white h5 rounded">
                         <option defaultValue=''>All</option>
                         <option defaultValue="air">Air</option>
                         <option defaultValue="cruise">cruise</option>
@@ -50,7 +50,7 @@ const Blogs = () => {
 
             </div>
             <h2>{services?.desc}</h2>
-            <div className="container text-black mt-5 mb-5" >
+            <div className="container text-black mt-5 pb-4" >
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {
                         services?.length === 0 ?
@@ -63,16 +63,16 @@ const Blogs = () => {
                                 <div className="card custom-cart h-100 hover">
                                     <img src={service.img} className="img-fluid rounded-start w-100" alt="..." />
                                     <div className="card-body">
-                                        <h5 className="card-title">Place: {service.place}</h5>
-                                        <h6 className="card-text"> Location: {service.location}</h6>
-                                        <h6 className="card-text">Transportation: {service.transportation}</h6>
-                                        <h6 className="card-text">Rating : {service.rating}</h6>
-                                        <h6 className="card-text">Date And Time : {service.time}</h6>
-                                        <p className="card-text">{service.desc}</p>
+                                        <h4 className="card-title mb-3 text-danger text-center"> {service.place}</h4>
+                                        <h6 className="card-text"> <span className="text-primary">Location:</span> {service.location}</h6>
+                                        <h6 className="card-text"><span className="text-primary">Transportation:</span> {service.transportation}</h6>
+                                        <h6 className="card-text"><span className="text-primary">Date And Time :</span> {service.time}</h6>
+                                        <br />
+                                        <p className="card-text text-justify">{service.desc}</p>
 
                                     </div>
                                     <div className="card-footer  text-center">
-                                        <h3 className="text-danger p-2 my-2">Price $: {service.price}</h3>
+                                        <h3 className="text-danger p-2 my-2">Price : {service.price}</h3>
                                         <NavLink to={`/blogs/${service._id}`} className="btn btn-primary btn-lg text-light   rounded btn-block">Blog Details</NavLink>
 
                                     </div>

@@ -15,20 +15,20 @@ const AddAdmin = () => {
 
     };
     return (
-        <div className="add-service">
-            <div className="contact1">
-                <div className="container-contact1 d-flex justify-content-center">
+        <div className="add-service text-white">
+            <div className="contact1 ">
+                <div className="container-contact1 d-flex justify-content-center bg-dark text-white">
                     <form onSubmit={handleSubmit(onSubmit)} className="contact1-form validate-form ">
-                        <span className="contact1-form-title">
+                        <span className="contact1-form-title text-white">
                             Make Admin
                         </span>
-                        <div className="wrap-input1 validate-input " data-validate="Name is required">
+                        <div className="wrap-input1 validate-input text-center " data-validate="Name is required">
                             <input className="input1 w-100" placeholder="Admin email" {...register("email")} />
                         </div>
 
 
                         <div className="container-contact1-form-btn">
-                            <button type='submit' className="contact1-form-btn">
+                            <button type='submit' className="contact1-form-btn ">
                                 <span>
                                     Make admin
                                 

@@ -66,13 +66,13 @@ const Login = () => {
     };
 
     return (
-        <div className="contact1 add-service d-flex justify-content-center custom-body my-5">
-            <div className="container-contact1 d-flex justify-content-center">
-                <div className=" text-center">
+        <div className="contact1 add-service d-flex justify-content-center custom-body p-4 bg-dark text-white">
+            <div className="container-contact1 d-flex justify-content-center bg-secondary">
+                <div className=" text-center bg-secondary">
                     <div className="">
 
                         <form onSubmit={handleLoginWithEmailAndPassword} className="contact1-form validate-form">
-                            <span className="contact1-form-title">
+                            <span className="contact1-form-title text-white">
                                 Login
                             </span>
                             <p className="text-danger text-center">{error}</p>
@@ -102,7 +102,7 @@ const Login = () => {
                         <button className="btn" onClick={handleGoogleLogin}> <img src={google} width="46px" alt="google-icon" /></button>
 
                         <br />
-                        <p> New User ?<Link to="/signup">Please register</Link ></p>
+                        <p className="text-white"> New User ?<Link to="/signup"><span className="text-white">Please register</span></Link ></p>
                     </div>
 
 

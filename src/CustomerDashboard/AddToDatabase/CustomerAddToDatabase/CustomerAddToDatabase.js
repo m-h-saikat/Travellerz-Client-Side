@@ -50,13 +50,13 @@ const CustomerAddToDatabase = () => {
 
     
     return (
-        <div className="add-service">
+        <div className="add-service ">
             <div className="contact1">
-                <div className="container-contact1 mx-auto">
+                <div className="container-contact1 mx-auto bg-dark">
                    
                     <form onSubmit={handleSubmit(onSubmit)} className="contact1-form mx-auto validate-form">
 
-                        <span className="contact1-form-title">
+                        <span className="contact1-form-title text-white">
 Add A New Blog                        </span>
 
                         <div className="wrap-input1 validate-input" data-validate="place is required">
@@ -109,7 +109,7 @@ Add A New Blog                        </span>
                         <div className="container-contact1-form-btn">
                             <button type='submit' className="contact1-form-btn">
                                 <span>
-Add Blog                                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+Add Blog                                   
                                 </span>
                             </button>
                         </div>
